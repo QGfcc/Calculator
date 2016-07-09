@@ -1,0 +1,67 @@
+$backgroundColor: grey;
+$backgroundColor: rgba(50, 50, 200, 1);
+$fontColor: white;
+$fontColor: rgba(255, 255, 255, 0.5);
+$borderColor: $fontColor;
+$butMesure:50px;
+$butMargin:6px;
+$butBorderThickness: 2px;
+$butBorder: $butBorderThickness solid $borderColor;
+$tableBorder: 10px solid $borderColor;
+$tablePadding: 6px;
+* {
+  /*box-sizing: border-box;*/
+}
+
+html {
+  background-color: $backgroundColor;
+  body {
+    margin: 100px 0px 30px 0px;
+    background-color: transparent;
+    /*background-color: $backgroundColor;*/
+    color: $fontColor;
+    table {
+      padding: $tablePadding;
+      border: $tableBorder;
+      margin: auto;
+      #calScreen {
+        margin: $butMargin;
+        width: 4*$butMesure + 3*2*$butMargin;
+        height: $butMesure;
+        /*background-color: $backgroundColor;
+        color: $fontColor;*/
+        border: $butBorder;
+        font-size: 2.2em;
+        overflow-x: hidden;
+        text-align: right;
+      }
+      .buttons {
+        padding: 0;
+        margin: 0;
+        button {
+          text-decoration: none;
+          width: $butMesure;
+          height: $butMesure;
+          margin: $butMargin;
+          border: $butBorder;
+          /*background-color: $backgroundColor;
+          color: $fontColor;*/
+          background-color: inherit;
+          color: inherit;
+          &:hover {
+            background-color: $fontColor;
+            color: $backgroundColor;
+          }
+        }
+      }
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      a {
+        text-decoration: underline;
+        color: inherit;
+      }
+    }
+  }
+}

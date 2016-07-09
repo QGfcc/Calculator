@@ -1,0 +1,48 @@
+* {
+  /*box-sizing: border-box;*/ }
+
+html {
+  background-color: #3232c8; }
+  html body {
+    margin: 100px 0px 30px 0px;
+    background-color: transparent;
+    /*background-color: $backgroundColor;*/
+    color: rgba(255, 255, 255, 0.5); }
+    html body table {
+      padding: 6px;
+      border: 10px solid rgba(255, 255, 255, 0.5);
+      margin: auto; }
+      html body table #calScreen {
+        margin: 6px;
+        width: 236px;
+        height: 50px;
+        /*background-color: $backgroundColor;
+        color: $fontColor;*/
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        font-size: 2.2em;
+        overflow-x: hidden;
+        text-align: right; }
+      html body table .buttons {
+        padding: 0;
+        margin: 0; }
+        html body table .buttons button {
+          text-decoration: none;
+          width: 50px;
+          height: 50px;
+          margin: 6px;
+          border: 2px solid rgba(255, 255, 255, 0.5);
+          /*background-color: $backgroundColor;
+          color: $fontColor;*/
+          background-color: inherit;
+          color: inherit; }
+          html body table .buttons button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #3232c8; }
+    html body footer {
+      text-align: center;
+      margin-top: 40px; }
+      html body footer a {
+        text-decoration: underline;
+        color: inherit; }
+
+/*# sourceMappingURL=main.css.map */
